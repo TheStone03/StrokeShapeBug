@@ -8,12 +8,12 @@
        
         <ScrollView Grid.Row="1">
             <VerticalStackLayout x:Name="VerticalPanel" Spacing="5">
-                <BindableLayout.ItemTemplate>
+                <!--<BindableLayout.ItemTemplate>
                     <DataTemplate>
                         <shb:MyCustomControl WidthRequest="100" HeightRequest="50">
                         </shb:MyCustomControl>
                     </DataTemplate>
-                </BindableLayout.ItemTemplate>
+                </BindableLayout.ItemTemplate>-->
             </VerticalStackLayout>
         </ScrollView>
     </Grid>

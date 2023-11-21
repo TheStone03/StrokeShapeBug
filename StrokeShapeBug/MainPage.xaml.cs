@@ -117,11 +117,12 @@ namespace StrokeShapeBug
 			s.Start();
 			VerticalPanel.Clear();
 
-			List<int> list = new List<int>();
 			for (int i = 0; i < 100; i++) {
-				list.Add(i);
+				var item = new MyCustomControl();
+				item.WidthRequest = 100;
+				item.HeightRequest = 50;
+				VerticalPanel.Add(item);
 			}
-			BindableLayout.SetItemsSource(VerticalPanel, list);
 
 			s.Stop();
 			Debug.WriteLine("Button_Clicked(), ElapsedMilliseconds: " + s.ElapsedMilliseconds);

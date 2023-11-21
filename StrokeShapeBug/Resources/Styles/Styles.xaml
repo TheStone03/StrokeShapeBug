@@ -8,7 +8,7 @@
     <shb:StringToStrokeShapeConverter x:Key="StringToStrokeShapeConverter"></shb:StringToStrokeShapeConverter>
 
     <!--BUG-->
-    <!--<RoundRectangle x:Key="CornerRadius">
+    <RoundRectangle x:Key="CornerRadius">
         <RoundRectangle.CornerRadius>
             10,10,10,10
         </RoundRectangle.CornerRadius>
@@ -16,15 +16,15 @@
     <Style x:Key="BorderStyleKey" TargetType="Border">
         <Setter Property="Background" Value="red"/>
         <Setter Property="StrokeShape" Value="{StaticResource CornerRadius}"/>
-    </Style>-->
+    </Style>
 
     <!--WORKAROUND-->
-    <x:String x:Key="TestCornerRadius">RoundRectangle 10,10,10,10</x:String>
+    <!--<x:String x:Key="TestCornerRadius">RoundRectangle 10,10,10,10</x:String>
     
     <Style x:Key="BorderStyleKey" TargetType="Border">
         <Setter Property="Background" Value="red"/>
         <Setter Property="StrokeShape" Value="{Binding Source={StaticResource TestCornerRadius}, Mode=OneTime, Converter={StaticResource StringToStrokeShapeConverter}}"/>
-    </Style>
+    </Style>-->
 
 
 
